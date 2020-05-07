@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Player application</title>
+
+	 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="musicstyle.css">
+	 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+</head>
+<body>
+
+		<header>
+		   <div class="logo">
+		      <img src="icon-music-header.png" alt="ninjaStudio">
+		      <h5>Ninja Studio</h5>
+		   </div>
+		   <nav>
+			      <ul>
+				         <li><a href="#Favourites">Favourites</a></li>
+				         <li><form action="">
+				               <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+				               <input type="text" placeholder="Search" name="search">
+				           </form></li>
+				         <li><a href="#"><i class="fa fa-microphone font-icons" aria-hidden="true"></i></a></li>
+				         <li><a href="#"><i class="fa fa-bell font-icons" aria-hidden="true"></i></a></li>
+				         <li><a href="#">Login</a></li>
+				         <li><a href="#">SignUp</a>
+				         </li>
+			      </ul>
+		   </nav>
+		   <div class="menu-toggle">
+				<i id="ham-burger" class="fa fa-bars font-icons" aria-hidden="true"></i>
+			</div>
+	</header>
+	<main>
+		<content>
+			<section id="Favourites">
+					<img id="img-1" class="slider-img" src="./resources/slider1.png">
+				    <img id="img-2" class="slider-img" src="./resources/slider2.jpg">
+				    <img id="img-3" class="slider-img" src="./resources/slider3.png">
+			</section>
+
+			<section id="latest-releases-container">
+			    <p class="text">Latest Release</p>
+				    	<div id="latest-releases">
+						      <div class="latest-collection-container">
+						          <a onclick="myAudioFunction('A');">
+							           	<div class="img-container">
+				     						<img src="./resources/latest-release1.jpg">
+				     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+				     					</div>
+			     				   </a>
+							        <pre class="sub-text title">Onism
+<span>DEC 12,2019</span></pre>
+									<pre class="time"><i class="fa fa-ellipsis-h  font-icons" aria-hidden="true"></i>
+4:04</pre>
+						       </div>
+
+						        <div class="latest-collection-container">
+						          <a onclick="myAudioFunction('A');">
+							           	<div class="img-container">
+				     						<img src="./resources/latest-release2.jpg">
+				     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+				     					</div>
+			     				   </a>
+							        <pre class="sub-text title">Onism
+<span>AUG 12,2019</span></pre>
+									<pre class="time"><i class="fa fa-ellipsis-h  font-icons" aria-hidden="true"></i>
+4:05</pre>
+						       </div>
+
+						       <div class="latest-collection-container">
+						          <a onclick="myAudioFunction('A');">
+							           	<div class="img-container">
+				     						<img src="./resources/latest-release3.jpg">
+				     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+				     					</div>
+			     				   </a>
+							        <pre class="sub-text title">Onism
+<span>AUG 12,2019</span></pre>
+									<pre class="time"><i class="fa fa-ellipsis-h  font-icons" aria-hidden="true"></i>
+4:05</pre>
+						       </div>
+
+						       <div class="latest-collection-container">
+						          <a onclick="myAudioFunction('A');">
+							           	<div class="img-container">
+				     						<img src="./resources/latest-release4.jpg">
+				     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+				     					</div>
+			     				   </a>
+							        <pre class="sub-text title">Onism
+<span>AUG 12,2019</span></pre>
+									<pre class="time"><i class="fa fa-ellipsis-h  font-icons" aria-hidden="true"></i>
+4:05</pre>
+						       </div>
+					 </div>          
+			</section>
+			<section id="popular-artists-container">
+			    	<p class="text">Popular Artists</p>
+					<div id="popular-artists">
+						<div class="singers">
+							<div class="rounded-img-container">
+								<a href="artist.html"><img class="rounded-img img-hover-play" src="./resources/ed_sheeran.jpg"></a>
+								<i class="fa fa-play play-btn" aria-hidden="true"></i>
+							</div>
+		  					<p class="sub-text">Ed Sheeran</p>
+		  				</div>
+
+		  				<div class="singers">
+							<div class="rounded-img-container">
+								<a href="artist.html"><img class="rounded-img img-hover-play" src="./resources/bruno_mars.jpg"></a>
+								<i class="fa fa-play play-btn" aria-hidden="true"></i>
+							</div>
+		  					<p class="sub-text">Bruno Mars</p>
+		  				</div>
+
+		  				<div class="singers">
+							<div class="rounded-img-container">
+								<a href="artist.html"><img class="rounded-img img-hover-play" src="./resources/imagine_dragon.jpg"></a>
+								<i class="fa fa-play play-btn" aria-hidden="true"></i>
+							</div>
+		  					<p class="sub-text">Coldplay</p>
+		  				</div>
+
+		  				<div class="singers">
+							<div class="rounded-img-container">
+								<a href="artist.html"><img class="rounded-img img-hover-play" src="./resources/zayn.jpg"></a>
+								<i class="fa fa-play play-btn" aria-hidden="true"></i>
+							</div>
+		  					<p class="sub-text">Zayn</p>
+		  				</div>
+		  				<div class="singers">
+							<div class="rounded-img-container">
+								<a href="artist.html"><img class="rounded-img img-hover-play" src="./resources/charlie.jpg"></a>
+								<i class="fa fa-play play-btn" aria-hidden="true"></i>
+							</div>
+		  					<p class="sub-text">Charlie Puth</p>
+		  				</div>
+		  				<div class="singers">
+							<div class="rounded-img-container">
+								<a href="artist.html"><img class="rounded-img img-hover-play" src="./resources/imagine_dragon.jpg"></a>
+								<i class="fa fa-play play-btn" aria-hidden="true"></i>
+							</div>
+		  					<p class="sub-text">Imagine Dragon</p>
+		  				</div>
+				</div>	
+			</section>
+			<section class="music" id="stations-1">
+				<img id="station" src="./resources/music_night.jpg">
+				<div class="child-music" id="inner-station">
+						<div id="music-1" class="music-stations">
+								<p class="sub-text">Love</p>
+						</div>
+						<div id="music-2" class="music-stations">
+								<p class="sub-text">Retro</p>
+						</div>
+						<div id="music-3" class="music-stations">
+								<p class="sub-text">Chill</p>
+						</div>
+						<div id="music-4" class="music-stations">
+								<p class="sub-text">Workout</p>
+						</div>
+						<div id="music-5" class="music-stations">
+								<p class="sub-text">Rock</p>
+						</div>
+						<div id="music-6" class="music-stations">
+								<p class="sub-text">Pop</p>
+						</div>
+				</div>
+			</section>
+			<section class="music-2" id="stations-2">
+						<div class="parent">
+							<div id="music-7" class="child-stations">
+								<p class="type sub-text">Party</p>
+							</div>
+						</div>
+						<div class="parent">
+							<div id="music-8" class="child-stations">
+								<p class=" type sub-text">Electronics</p>
+							</div>
+						</div>
+						<div class="parent">
+							<div id="music-9" class="child-stations">
+								<p class="type sub-text">Road Trip</p>
+							</div>
+						</div>
+			</section>
+			<section class="latest-english-container">
+			    	<p>Latest English</p>
+				  	<div id="latest-english-inner">
+				      <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/carry_on.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">DEC 12,2019</p>
+							<span class="sub-text title">Carry On</span>
+				       </div>
+				       <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/giant.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">JAN 11,2018</p>
+							<span class="sub-text title">Giant</span>
+				       </div>
+
+				        <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/hypogenic.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">FEB 11,2018</p>
+							<span class="sub-text title">Hypnagogic</span>
+				       </div>
+
+				         <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/summer.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">FEB 11,2018</p>
+							<span class="sub-text title">Summer</span>
+				       </div>
+				       <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/promises.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">FEB 21,2018</p>
+							<span class="sub-text title">Promises</span>
+				       </div>
+				       <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/friends.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">JAN 21,2018</p>
+							<span class="sub-text title">Friends</span>
+				       </div>
+					</div>
+			</section>	
+			<section class="latest-english-container">
+			    	<p>Latest Hindi</p>
+				  	<div id="latest-english-inner">
+				      <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/carry_on.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">DEC 12,2019</p>
+							<span class="sub-text title">Carry On</span>
+				       </div>
+				       <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/giant.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">JAN 11,2018</p>
+							<span class="sub-text title">Giant</span>
+				       </div>
+
+				        <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/hypogenic.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">FEB 11,2018</p>
+							<span class="sub-text title">Hypnagogic</span>
+				       </div>
+
+				         <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/summer.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">FEB 11,2018</p>
+							<span class="sub-text title">Summer</span>
+				       </div>
+				       <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/promises.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">FEB 21,2018</p>
+							<span class="sub-text title">Promises</span>
+				       </div>
+				       <div class="latest-english">
+					          <a onclick="myAudioFunction('A');">
+						           	<div class="latest-english-hover">
+			     						<img src="./resources/friends.jpg">
+			     						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+			     					</div>
+		     				   </a>
+	     				    <p class="sub-text title">JAN 21,2018</p>
+							<span class="sub-text title">Friends</span>
+				       </div>
+					</div>
+			</section>	
+	</content>
+	
+			<aside id="aside">
+		   		<p class="heading text title">Queue</p>
+				  		 <ol id="queue-list">
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				            <li>
+				                  <div class="queue">
+				                     <div class="q-img-container">
+				                        <img src="./resources/laare.jpg">
+				                        <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				                     </div>
+				                     <pre class="sub-text title">Laare
+<span>Text</span></pre>
+				                     <i class="fa fa-heart" aria-hidden="true"></i>
+				                  </div>
+				            </li>
+				   </ol>
+		</aside>
+</main>
+
+<script>
+     var playAudio = new Audio('./resourcesapna_time_ayega_audio.mp3');
+     function myAudioFunction(letter) {
+         if(letter == 'a') {
+             playAudio.play();
+     }
+ </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $(".menu-toggle").click(function(){
+		   $('nav').toggleClass('active');
+		  });
+		});
+</script>
+</body>
+</html>
